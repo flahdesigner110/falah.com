@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Falah.com (Falah Designer)</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0d0d0d;
+            color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth; /* اس سے پیج آہستہ اور خوبصورت انداز میں سکرول ہو کر نیچے جائے گا */
+        }
+
+        /* ہیڈر سیکشن */
+        header {
+            background-color: #1a1a1a;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #d4af37;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 26px;
+            font-weight: bold;
+            color: #d4af37;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #d4af37;
+        }
+
+        /* ہیرو (تعارف) سیکشن */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('logo.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            color: #d4af37;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: #cccccc;
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+        }
+
+        .btn {
+            background-color: #d4af37;
+            color: #0d0d0d;
+            padding: 12px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #b38f27;
+        }
+
+        /* سروسز / پروڈکٹس سیکشن */
+        .services {
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        .services h2 {
+            font-size: 32px;
+            color: #d4af37;
+            margin-bottom: 40px;
+        }
+
+        .service-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: #1a1a1a;
+            border: 1px solid #333333;
+            border-radius: 10px;
+            width: 300px;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #d4af37;
+        }
+
+        .card h3 {
+            color: #d4af37;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: #aaaaaa;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        /* کانٹیکٹ سیکشن */
+        .contact-section {
+            background-color: #141414;
+            padding: 60px 20px;
+            text-align: center;
+            border-top: 1px solid #333333;
+        }
+
+        .contact-section h2 {
+            color: #d4af37;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .contact-box {
+            font-size: 20px;
+            color: #ffffff;
+            background-color: #1a1a1a;
+            display: inline-block;
+            padding: 20px 40px;
+            border-radius: 10px;
+            border: 1px solid #d4af37;
+        }
+
+        .contact-box span {
+            color: #d4af37;
+            font-weight: bold;
+        }
+
+        /* فوٹر */
+        footer {
+            background-color: #1a1a1a;
+            text-align: center;
+            padding: 20px;
+            border-top: 1px solid #333333;
+            color: #777777;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ہیڈر اور مینو -->
+    <header>
+        <div class="logo">Falah.com (Falah Designer)</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- ہیرو / تعارف سیکشن -->
+    <section id="home" class="hero">
+        <h1>Welcome! I am Falah Designer.</h1>
+        <p>Turn your ideas into reality through professional fashion designing, unique t-shirt designs, and eye-catching logo branding.</p>
+        <a href="#services" class="btn">View My Designs</a>
+    </section>
+
+    <!-- سروسز سیکشن -->
+    <section id="services" class="services">
+        <h2>My Services</h2>
+        <div class="service-container">
+            
+            <div class="card">
+                <h3>Logo Designing</h3>
+                <p>A unique, gold and royal logo for your business or brand that will become your identity.</p>
+            </div>
+
+            <div class="card">
+                <h3>T-shirt design</h3>
+                <p>Stunning, attractive and unique t-shirt graphics for brands and personal use.</p>
+            </div>
+
+            <div class="card">
+                <h3>Fashion Designing</h3>
+                <p>The best and most attractive designs are created for modern and trending fashion garments.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- کانٹیکٹ / رابطہ سیکشن (یہاں آپ کا نمبر آئے گا) -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Me</h2>
+        <div class="contact-box">
+            <p>Direct WhatsApp / Call: <span>+92 300 1234567</span></p>
+            <p>Email: <span>falah@designer.com</span></p>
+        </div>
+    </section>
+
+    <!-- فوٹر -->
+    <footer>
+        <p>&copy; 2026 Falah.com - All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
